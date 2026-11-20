@@ -16,7 +16,7 @@ public class MethodSecurityController {
     }
 
     @GetMapping("/methods/write")
-    @RolesAllowed("ROLE_WRITE")
+    @RolesAllowed("WRITE")
     public String write() {
         return "Write access granted";
     }
@@ -33,3 +33,4 @@ public class MethodSecurityController {
         return username;
     }
 }
+
